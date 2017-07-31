@@ -12,3 +12,7 @@ The current stack includes
 3. Use of ES6 with Babel loaders
 4. SASS for CSS
 5. Webpack for module bundling
+
+Also deployed to 
+http://meso-challenge.netlify.com/
+
