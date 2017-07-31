@@ -1,0 +1,49 @@
+#app{
+	$textColor1: white;                 /* VARIABLES DEFINITION */
+	$textColor2: gray;   
+    $backgroundTheme1: #0E0E0E;
+    $backgroundTheme2: #1E1E1E;
+    $backgroundTheme3: #000000;
+	background-color:$backgroundTheme1;
+	min-height:800px;
+	width:100%;
+	@import "base";                   /* IMPORTING BASE STYLES  */
+	@import "spinner";                /* IMPORTING SPINNER STYLES  */
+	.meso_mainContainer{
+		width: 1024px;
+		color:$textColor1;
+	    font-size:11px;
+	    font-weight:bold;
+	    margin: auto;
+	    min-height: inherit;
+	    @import "servers";                   /* IMPORTING SERVERS STYLES  */
+	    @import "controls";                   /* IMPORTING CONTROLS STYLES  */
+	}
+}
+
+@media (max-width: 480px) {
+    #app{
+    	.meso_mainContainer{
+    		padding:0px;
+    		width:100%;
+    		.servers{
+    			padding-top:20px;
+    			.servers_container{
+    				.server_row{
+						width: 28%;
+						font-size: 8px;
+					}
+    			}
+    		}
+    		.controls{
+    			min-height:auto;
+    			.server_controls{
+    				height:150px;
+    				.server_heading{
+
+			    	}
+    			}
+    		}
+    	}
+    }
+}

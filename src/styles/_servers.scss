@@ -1,0 +1,21 @@
+.servers{
+	background-color:$backgroundTheme3;
+	min-height: inherit;
+	.server_heading{
+		padding-left: 20px;
+	}
+	.server_row{
+		height: 120px;
+	    margin: 7px;
+	    padding: 0;
+	    width: 23%;
+	    display: inline-block;
+	    border-radius: 5px;
+	    background-color:$backgroundTheme2;
+	    .app_col{
+	    	height:100%;
+	    	border-radius: 5px;
+	    	text-align: center;
+	    }
+	}
+}

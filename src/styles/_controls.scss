@@ -1,0 +1,64 @@
+.controls{
+	background-color: $backgroundTheme2;
+	min-height: inherit;
+	padding:0px;
+	.glyphicon{
+		font-size:45px;
+	}
+	.server_controls,
+	.app_controls{
+		height:300px;
+		padding: 40px 30px;
+		.add_server,
+    	.destroy_server{
+    		width:50%;
+    		display:inline-block;
+    		text-align:center;
+    	}
+	}
+	.app_controls{
+		color:$textColor2;
+		height:auto;
+		padding:0px;
+		.app_heading{
+			padding-bottom:10px;
+			padding-left: 25px;
+		}
+		.app_operation{
+			display:table-cell;
+			vertical-align:middle;
+			position: relative;
+			left: 10px;
+			.app_operation_plus,
+			.app_operation_minus{
+				padding:0;
+				display:inline-block;
+				position: inherit;
+				z-index: 1000;
+				.glyphicon{
+		    		font-size:20px;
+		    	}
+			}
+		}
+		.app_row{
+			height:50px;
+			color:$textColor1;
+			background-color:$backgroundTheme1;
+			margin-bottom: 5px;
+		    display: table;
+		    width: 100%;
+		    .app_color{
+		    	width: 5px;
+			    background-color: #fff;
+			    padding-right: 5px;
+				display: table-cell;
+		    }
+		    .app_text{
+		    	vertical-align: middle;
+				display: table-cell;
+				padding-left: 20px;
+				width:210px;
+		    }
+		}
+	}
+}

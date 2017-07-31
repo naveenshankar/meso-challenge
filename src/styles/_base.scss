@@ -1,0 +1,15 @@
+div > .glyphicon{
+	width: 100%;
+	text-align: center;
+	color: $textColor1;
+	cursor:pointer;
+}
+div:hover > .glyphicon,
+div:hover > .glyphicon + div{
+	color:$textColor2;
+	cursor:pointer;
+}
+.rs_spinner{
+    position: absolute;
+    left: 45%;
+}
