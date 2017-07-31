@@ -40,6 +40,15 @@ module.exports = {
         ]
     },
     plugins: [
+              // optimizations
+              new webpack.optimize.DedupePlugin(),
+              new webpack.optimize.OccurenceOrderPlugin(),
+              new webpack.optimize.UglifyJsPlugin({
+                //beautify: false,
+                compress: {
+                  warnings: false
+                }
+              }),
               new ExtractTextPlugin("client_styles.css")
     ],
     node: {

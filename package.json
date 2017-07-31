@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run build",
-    "build": "webpack -d --DEV && cp src/client/index.html public/index.html && webpack-dev-server --content-base src/client --inline --hot --history-api-fallback --port 7000 --http"
+    "build": "webpack -d --DEV && cp src/client/index.html public/index.html && webpack-dev-server --content-base src/client --inline --hot --history-api-fallback --port 7000 --http",
+    "build:prod": "webpack -p --PROD && cp src/client/index.html public/index.html"
   },
   "repository": {
     "type": "git",
