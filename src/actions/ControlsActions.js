@@ -71,7 +71,6 @@ export function killApp(appIndex) {
 				let currentServers = Object.assign([],store.getState().controls.servers);
 				let apps = Object.assign([],store.getState().controls.apps);
 				const poppedServer = apps[appIndex].serversDeployed.pop();
-				// console.log('poppedServer',poppedServer);
 				if(poppedServer !== undefined){
 					const poppedAppPosition = currentServers[poppedServer]['server_'+(poppedServer+1)].indexOf(appIndex);
 					currentServers[poppedServer]['server_'+(poppedServer+1)].splice(poppedAppPosition,1);
