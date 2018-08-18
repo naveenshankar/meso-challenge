@@ -25,7 +25,7 @@ module.exports = {
                   presets: ['react','es2015','stage-1','stage-2'],
                   "plugins": ['transform-runtime',
                               'transform-regenerator'
-                              ],
+                              ]
                 }
             },
             { test: /\.png$/, loader: "file-loader" },
