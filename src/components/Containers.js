@@ -41,7 +41,6 @@ const mapStateToProps = (state) => {
 //Factory Functions
 const mapDispatchToProps = (dispatch) => {
 	return {
-
     };
 };
 
